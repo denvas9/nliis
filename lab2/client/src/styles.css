@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.res-field {
+  background-color: hsl(0, 80%, 37.5%);
+  color: white;
+}
+
+.btn.my-btn {
+  background-color: hsl(10, 85%, 40%);
+  color: white;
+}
+
+.btn.my-btn:hover, .btn.my-btn:active {
+  background-color: hsl(10, 85%, 50%);
+  color: white;
+}
+
+.my-title {
+  color: hsl(0, 80%, 45%);
+}

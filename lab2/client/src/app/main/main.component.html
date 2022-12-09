@@ -1,0 +1,15 @@
+<div class="mb-2">
+  <app-info></app-info>
+</div>
+
+<form (ngSubmit)="AnalyzeFiles()">
+  <label class="form-label">Файлы:</label>
+  <input id="files" class="form-control mb-2" type="file" [disabled]="processing" required multiple accept=".html">
+  <button type="submit" class="btn my-btn" title="Analyze" [disabled]="processing">Анализ</button>
+  <button type="button" class="ms-1 btn my-btn" title="Analyze" [disabled]="result == ''" (click)="ClearLog()">Очистить результат</button>
+</form>
+
+<div class="res-field p-2 mt-2">
+  Результат:
+  <pre *ngIf="result">{{result}}</pre>
+</div>
