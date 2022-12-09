@@ -1,0 +1,7 @@
+For future readers, this can also happen if you name a python file the same name as a dependency your project uses.
+gggg
+For example: cum
+fgfd fdgd cumg
+I cannot have a file named retrying.py that is using the retrying package.
+gggggg dfgg dog
+Assuming I had the retrying package gffin my project, I could not have a file called retrying.py with the below contents:

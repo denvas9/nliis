@@ -1,0 +1,62 @@
+#def on_modified(self, event):
+        #if (event.is_directory):
+        #    return
+        
+        #quey_results = list(self.db_collection.find({'path':event.src_path}))
+        
+        #if (len(quey_results) == 0):
+        #    print(f'inserting {event.src_path}')
+        #    self.db_collection.insert_one({
+        #        'path':event.src_path,
+        #        'words':get_words(event.src_path),
+        #    })
+        #else :
+            #print(f'replacing {event.src_path}')
+        #    self.db_collection.replace_one(
+        #        {'path':event.src_path},
+        #        {
+        #        'path':event.src_path,
+        #        'words':get_words(event.src_path),
+        #        }
+        #)     
+        #print(event.event_type, event.src_path)
+    
+    #def on_created(self, event):
+    #    if (event.is_directory):
+    #        return
+        
+        #quey_results = list(self.db_collection.find({'path':event.src_path}))
+        
+        #if (len(quey_results) == 0):
+            #print(f'inserting {event.src_path}')
+        #    self.db_collection.insert_one({
+        #        'path':event.src_path,
+        #        'words':['word1','word2'],
+        #    })
+        #else :
+            #print(f'replacing {event.src_path}')
+        #    self.db_collection.replace_one(
+        #        {'path':event.src_path},
+        #        {
+        #        'path':event.src_path,
+        #        'words':['word1','word2, wod3'],
+        #        }
+        #)  
+        #print(event.event_type, event.src_path)
+              
+    #def on_deleted(self, event):
+        #if (event.is_directory):
+        #    return
+        
+        #quey_results = list(self.db_collection.find({'path':event.src_path}))
+        
+        #if (len(quey_results) == 0):
+        #    return;
+        #else :
+        #    self.db_collection.delete_one(
+        #        {'path':event.src_path},
+        #)    
+        #print(event.event_type, event.src_path)
+    
+    #def on_modified(self, event):
+    #    print('on_modified', event.src_path)
